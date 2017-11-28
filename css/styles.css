@@ -1,0 +1,88 @@
+/* For testing only */
+
+*:not(body):not(html) {
+  box-sizing:border-box;
+  border:1px dashed #000;
+}
+
+.columns {
+  min-height: 100px;
+}
+
+/* End for testing */
+/*Standard CSS styles below*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: sans-serif;
+}
+
+.logo img {
+  width: 250px;
+  float: left;
+  margin-top: 50px;
+}
+
+.nav-bar ul {
+  list-style: none;
+  float: right;
+}
+
+.nav-bar ul li {
+  display: inline;
+  font-size: 30px;
+  color: purple;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.hero {
+  clear: both;
+  background-image: url("../img/cloth.png");
+  background-repeat: repeat;
+  height: 40vh;
+}
+
+.hero h1 {
+  font-size: 150px;
+  color: purple;
+  padding: 20px;
+  text-align: right;
+  text-shadow: 4px 4px 10px black;
+  margin-top: 3vw;
+  margin-right: 20px;
+}
+
+.four-items {
+  width: 100vw;
+  margin: 20px;
+  padding: 20px;
+  overflow: auto;
+}
+
+#story-one, #story-two, #story-three, #story-four {
+  float: left;
+  width: 20vw;
+  margin: 2vw;
+}
+
+#story-one {
+  margin-left: 3vw;
+}
+
+#story-one img, #story-two img, #story-three img, #story-four img {
+  width: 20vw;
+}
+
+.text-boxes {
+  font-size: 30px;
+  font-family: sans-serif;
+}
+
+h3 {
+  font-size: 45px;
+  color: purple;
+  text-align: center;
+}
