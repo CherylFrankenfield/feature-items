@@ -1,13 +1,13 @@
 /* For testing only */
 
-*:not(body):not(html) {
+/**:not(body):not(html) {
   box-sizing:border-box;
   border:1px dashed #000;
 }
 
 .columns {
   min-height: 100px;
-}
+}*/
 
 /* End for testing */
 /*Standard CSS styles below*/
@@ -20,9 +20,17 @@
 }
 
 .logo img {
-  width: 250px;
   float: left;
-  margin-top: 50px;
+  margin-top: 5vh;
+  margin-left: 3vh;
+  max-height: 38vh;
+  object-fit: cover;
+}
+
+.nav-bar {
+  overflow: hidden;
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 
 .nav-bar ul {
@@ -35,7 +43,16 @@
   font-size: 30px;
   color: purple;
   margin-right: 15px;
+  border-radius: 3px;
+  border: 2px solid purple;
+  padding: 5px;
+  background-color: lightgray;
+}
+
+li a {
   text-decoration: none;
+  color: purple
+
 }
 
 .hero {
@@ -46,13 +63,13 @@
 }
 
 .hero h1 {
-  font-size: 150px;
+  font-size: 100px;
   color: purple;
-  padding: 20px;
   text-align: right;
   text-shadow: 4px 4px 10px black;
   margin-top: 3vw;
   margin-right: 20px;
+  padding-top: 20px;
 }
 
 .four-items {
@@ -85,4 +102,122 @@ h3 {
   font-size: 45px;
   color: purple;
   text-align: center;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1365px) {
+  .hero {
+    clear: both;
+    background-image: url("../img/cloth.png");
+    background-repeat: repeat;
+    height: 25vh;
+  }
+
+  .hero h1 {
+    font-size: 8vw;
+    color: purple;
+    text-align: right;
+    text-shadow: 4px 4px 10px black;
+    margin-top: 3vw;
+    margin-right: 3vw;
+    padding-top: 1vw;
+  }
+
+  .logo img {
+    float: left;
+    margin-top: 1vh;
+    margin-left: 3vh;
+    max-height: 23vh;
+    object-fit: cover;
+  }
+
+  #story-one, #story-two, #story-three, #story-four {
+    float: left;
+    width: 40vw;
+    margin: 2vw;
+  }
+
+  #story-one img, #story-two img, #story-three img, #story-four img {
+    width: 40vw;
+  }
+
+  #story-two, #story-four {
+    margin-left: 5vw;
+  }
+
+}
+
+@media screen and (max-width: 767px) {
+  body {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+
+  .hero {
+    clear: both;
+    background-image: url("../img/cloth.png");
+    background-repeat: repeat;
+    height: 40vh;
+  }
+
+  .hero h1 {
+    font-size: 10vw;
+    color: purple;
+    text-shadow: 4px 4px 10px black;
+    /*margin-top: 3vw;
+    margin-right: 3vw;*/
+    padding-top: 1vw;
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .logo img {
+    float: none;
+    margin-top: 1vh;
+    margin-left: 0vh;
+    max-height: 23vh;
+    /*object-fit: cover;*/
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .nav-bar ul li {
+    display: inline;
+    font-size: 20px;
+    color: purple;
+    margin-right: 15px;
+    border-radius: 3px;
+    border: 2px solid purple;
+    padding: 5px;
+    background-color: lightgray;
+  }
+
+  .four-items {
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    /*background-color: yellow;*/
+  }
+
+  #story-one, #story-two, #story-three, #story-four {
+    width: 95vw;
+    float: none;
+    /*background-color: red;*/
+    margin: 10px 0 0 0;
+    border: solid thin purple;
+  }
+
+  #story-one img, #story-two img, #story-three img, #story-four img {
+    width: 90vw;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .text-boxes {
+    font-size: 20px;
+    text-align: center;
+    font-family: sans-serif;
+  }
 }
